@@ -11,6 +11,7 @@
         <a href="#features">Características</a>
         <a href="#about">Acerca de</a>
         <a href="?slug=panel" class="btn-nav">Ver Panel</a>
+        <a href="?slug=admin-login">Admin</a>
     </nav>
 
     <section class="hero">

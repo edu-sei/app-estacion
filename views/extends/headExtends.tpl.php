@@ -358,6 +358,71 @@ nav a:hover {
     text-decoration: underline;
 }
 
+/* Estilos para administrador */
+.admin-container {
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.admin-panel {
+    background-color: var(--fondo-seccion-clara);
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px var(--sombra-suave);
+}
+
+.admin-actions {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.admin-btn {
+    display: inline-block;
+    font-size: 1.2rem;
+    padding: 1rem 2rem;
+    margin: 0.5rem;
+}
+
+.admin-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.stat-card {
+    background-color: var(--fondo-tarjeta);
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 12px var(--sombra-suave);
+}
+
+.stat-card h3 {
+    color: var(--titulo-tarjeta);
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.stat-number {
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--fondo-boton);
+}
+
+.btn-logout {
+    background: #e74c3c;
+    color: white;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.btn-logout:hover {
+    background: #c0392b;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
     .hero {

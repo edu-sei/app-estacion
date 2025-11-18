@@ -35,6 +35,11 @@
 				$_GET['token'] = $url_parts[1];
 			}
 		}
+		
+		// Manejar rutas con guiones
+		if(strpos($section, '-') !== false) {
+			$section = str_replace('-', '-', $section);
+		}
 	}
 
 	/* Se especifico una sección pero esta no existe */
