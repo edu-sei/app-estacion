@@ -197,7 +197,7 @@ nav a:hover {
 /* Estilos para el detalle de estación */
 .detalle-container {
     padding: 2rem;
-    max-width: 800px;
+    max-width: 1400px;
     margin: 0 auto;
 }
 
@@ -229,38 +229,63 @@ nav a:hover {
 .chipid {
     color: var(--texto-principal);
     font-weight: bold;
+    margin-bottom: 0.5rem;
 }
 
-.datos-meteorologicos h3 {
-    color: var(--titulo-tarjeta);
-    margin-bottom: 1.5rem;
-    text-align: center;
+.ultima-actualizacion {
+    color: var(--texto-principal);
+    font-size: 0.9rem;
+    font-style: italic;
 }
 
-.datos-grid {
+/* Estilos para los gráficos */
+.graficos-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
 }
 
-.dato-card {
+.grafico-card {
     background-color: var(--fondo-tarjeta);
     padding: 1.5rem;
-    border-radius: 10px;
-    text-align: center;
-    box-shadow: 0 2px 8px var(--sombra-muy-suave);
+    border-radius: 12px;
+    box-shadow: 0 4px 12px var(--sombra-suave);
+    transition: transform 0.3s;
 }
 
-.dato-card h4 {
+.grafico-card:hover {
+    transform: translateY(-3px);
+}
+
+.grafico-card h3 {
     color: var(--titulo-tarjeta);
-    margin-bottom: 0.8rem;
-    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-size: 1.2rem;
 }
 
-.valor {
-    font-size: 1.8rem;
+.grafico-card canvas {
+    height: 250px !important;
+    margin-bottom: 1rem;
+}
+
+.valor-actual {
+    text-align: center;
     font-weight: bold;
     color: var(--fondo-boton);
+    font-size: 1.1rem;
+    padding: 0.5rem;
+    background-color: var(--fondo-seccion-clara);
+    border-radius: 8px;
+}
+
+.riesgo-incendio {
+    grid-column: span 1;
+}
+
+.riesgo-incendio canvas {
+    height: 200px !important;
 }
 
 /* Responsive */
@@ -274,8 +299,16 @@ nav a:hover {
         grid-template-columns: 1fr;
     }
     
-    .datos-grid {
+    .graficos-container {
         grid-template-columns: 1fr;
+    }
+    
+    .detalle-container {
+        padding: 1rem;
+    }
+    
+    .grafico-card canvas {
+        height: 200px !important;
     }
 }
 
