@@ -288,6 +288,76 @@ nav a:hover {
     height: 200px !important;
 }
 
+/* Estilos para autenticación */
+.auth-container {
+    padding: 2rem;
+    max-width: 500px;
+    margin: 0 auto;
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.auth-card {
+    background-color: var(--fondo-seccion-clara);
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px var(--sombra-suave);
+    width: 100%;
+}
+
+.auth-card h2 {
+    color: var(--titulo-tarjeta);
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.auth-form {
+    margin: 1.5rem 0;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--texto-principal);
+    font-weight: bold;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 0.8rem;
+    border: 2px solid var(--fondo-tarjeta);
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: var(--fondo-boton);
+}
+
+.auth-links {
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+.auth-links a {
+    display: block;
+    margin: 0.5rem 0;
+    color: var(--fondo-boton);
+    text-decoration: none;
+}
+
+.auth-links a:hover {
+    text-decoration: underline;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
     .hero {
@@ -309,6 +379,10 @@ nav a:hover {
     
     .grafico-card canvas {
         height: 200px !important;
+    }
+    
+    .auth-container {
+        padding: 1rem;
     }
 }
 

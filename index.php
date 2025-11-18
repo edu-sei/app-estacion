@@ -12,7 +12,6 @@
 
 	require ".env.php"; /*Variables de entorno*/
 	require "models/DBAbstract.php"; /*Modelo de conexión a la db*/
-	require_once 'models/Usuarios.php';
 	
 	require "librarys/Enano.php"; /*Motor de plantillas*/
 
@@ -27,6 +26,14 @@
 		// Si es la sección detalle, extraer el chipid
 		if($section == "detalle" && isset($url_parts[1])){
 			$_GET['chipid'] = $url_parts[1];
+		}
+		
+		// Para validate, blocked y reset, extraer el token
+		if(($section == "validate" || $section == "blocked" || $section == "reset") && isset($url_parts[1])){
+			$_GET['token_action'] = $url_parts[1];
+			if($section == "blocked") {
+				$_GET['token'] = $url_parts[1];
+			}
 		}
 	}
 

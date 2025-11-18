@@ -6,6 +6,8 @@
         <h1>{{ APP_SECTION }}</h1>
         <nav>
             <a href="?slug=panel">← Volver al Panel</a>
+            <span>Bienvenido, {{ USER_NAME }}</span>
+            <a href="?slug=logout">Cerrar sesión</a>
         </nav>
     </header>
 

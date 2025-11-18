@@ -6,6 +6,7 @@
         <h1>{{ APP_SECTION }}</h1>
         <nav>
             <a href="?slug=landing">Inicio</a>
+            <a href="?slug=login">Iniciar sesión</a>
         </nav>
     </header>
 
