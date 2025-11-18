@@ -1,0 +1,27 @@
+# Archivo de configuración con datos sensibles
+.env.php
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Archivos temporales
+*.tmp
+*.temp
+
+# Carpetas de dependencias (si se usan en el futuro)
+node_modules/
+vendor/
+
+# Archivos de configuración del IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Archivos de backup
+*.bak
+*.backup
