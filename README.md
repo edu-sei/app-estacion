@@ -30,16 +30,21 @@ app-estacion/
 ## Tecnologías Utilizadas
 
 - PHP (Backend)
+- MySQL (Base de datos)
 - JavaScript (Frontend - Fetch API, async/await)
 - Chart.js (Gráficos interactivos)
+- Sistema de envío de emails
 - HTML5 & CSS3
 - Motor de plantillas personalizado "Enano"
 
 ## Instalación
 
 1. Clonar el repositorio
-2. Configurar las variables en `.env.php`
-3. Ejecutar en servidor web con PHP
+2. Crear base de datos MySQL
+3. Ejecutar el script `database/usuarios.sql`
+4. Configurar las variables en `.env.php`
+5. Configurar servidor de correo para envío de emails
+6. Ejecutar en servidor web con PHP
 
 ## Funcionalidades Implementadas
 
@@ -47,7 +52,7 @@ app-estacion/
 - ✅ Motor de plantillas funcional
 - ✅ Vista landing con información de la app
 - ✅ Panel de estaciones con datos simulados
-- ✅ Vista de detalle de estación con gráficos
+- ✅ Vista de detalle de estación con gráficos (requiere login)
 - ✅ Gráficos interactivos con Chart.js:
   - Temperatura (línea)
   - Humedad (línea)
@@ -55,6 +60,18 @@ app-estacion/
   - Presión atmosférica (línea)
   - Riesgo de incendio (doughnut)
 - ✅ Actualización automática cada 60 segundos
+- ✅ Sistema completo de usuarios:
+  - Registro con validación por email
+  - Login con autenticación
+  - Recuperación de contraseña
+  - Bloqueo de cuenta por seguridad
+  - Validación de cuenta
+  - Restablecimiento de contraseña
+- ✅ Envío de emails automáticos:
+  - Bienvenida y activación
+  - Notificaciones de inicio de sesión
+  - Alertas de seguridad
+  - Recuperación de contraseña
 - ✅ Navegación entre vistas
 - ✅ Diseño responsive
 - ✅ Integración con Git
