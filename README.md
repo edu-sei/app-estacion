@@ -33,6 +33,8 @@ app-estacion/
 - MySQL (Base de datos)
 - JavaScript (Frontend - Fetch API, async/await)
 - Chart.js (Gráficos interactivos)
+- Leaflet (Mapas interactivos)
+- API ipwho.is (Geolocalización)
 - Sistema de envío de emails
 - HTML5 & CSS3
 - Motor de plantillas personalizado "Enano"
@@ -41,10 +43,17 @@ app-estacion/
 
 1. Clonar el repositorio
 2. Crear base de datos MySQL
-3. Ejecutar el script `database/usuarios.sql`
+3. Ejecutar los scripts:
+   - `database/usuarios.sql`
+   - `database/tracker.sql`
 4. Configurar las variables en `.env.php`
 5. Configurar servidor de correo para envío de emails
 6. Ejecutar en servidor web con PHP
+
+## Credenciales de Administrador
+
+- **Usuario**: admin-estacion
+- **Contraseña**: admin1234
 
 ## Funcionalidades Implementadas
 
@@ -72,6 +81,16 @@ app-estacion/
   - Notificaciones de inicio de sesión
   - Alertas de seguridad
   - Recuperación de contraseña
+- ✅ Sistema de tracking de ubicación:
+  - Registro automático de IP y geolocalización
+  - Integración con API ipwho.is
+  - Almacenamiento de datos de navegador y sistema
+- ✅ Panel de administrador:
+  - Login exclusivo para admin-estacion
+  - Estadísticas de usuarios y clientes
+  - Mapa interactivo con Leaflet
+  - Visualización de ubicaciones de clientes
+- ✅ API REST para ubicaciones de clientes
 - ✅ Navegación entre vistas
 - ✅ Diseño responsive
 - ✅ Integración con Git
