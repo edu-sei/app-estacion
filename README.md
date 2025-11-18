@@ -31,6 +31,7 @@ app-estacion/
 
 - PHP (Backend)
 - JavaScript (Frontend - Fetch API, async/await)
+- Chart.js (Gráficos interactivos)
 - HTML5 & CSS3
 - Motor de plantillas personalizado "Enano"
 
@@ -46,7 +47,14 @@ app-estacion/
 - ✅ Motor de plantillas funcional
 - ✅ Vista landing con información de la app
 - ✅ Panel de estaciones con datos simulados
-- ✅ Vista de detalle de estación
+- ✅ Vista de detalle de estación con gráficos
+- ✅ Gráficos interactivos con Chart.js:
+  - Temperatura (línea)
+  - Humedad (línea)
+  - Viento (línea)
+  - Presión atmosférica (línea)
+  - Riesgo de incendio (doughnut)
+- ✅ Actualización automática cada 60 segundos
 - ✅ Navegación entre vistas
 - ✅ Diseño responsive
 - ✅ Integración con Git
@@ -55,8 +63,8 @@ app-estacion/
 
 - [ ] Conexión con API real de estaciones
 - [ ] Base de datos para persistencia
-- [ ] Gráficos de datos históricos
 - [ ] Sistema de alertas meteorológicas
+- [ ] Exportación de datos históricos
 
 ## Autor
 
